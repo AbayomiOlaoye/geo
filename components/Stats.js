@@ -8,29 +8,17 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const courses = [
   {
+    title: 'No More Sorrow',
+    image: '/images/risk-mgt.webp',
+    date: 'May 28 - 30, 2025',
+    upcoming: false,
+  },
+  {
     title: 'A 3-Day Liberation Crusade',
     image: '/images/management.webp',
-    date: '25/08/2025',
-    upcoming: true,
-  },
-  {
-    title: 'A 3-Day Liberation Crusade',
-    image: '/images/risk-mgt.webp',
-    date: '25/03/2025',
+    date: ' Mar. 18 - 20, 2025',
     upcoming: false,
   },
-  {
-    title: 'A 3-Day Liberation Crusade',
-    image: '/images/logistics.webp',
-    date: '25/08/2025',
-    upcoming: false,
-  },
-  {
-    title: 'Strength for the Weak',
-    image: '/images/project.webp',
-    date: '25/01/2025',
-    upcoming: false,
-  }
 ];
 
 const StatisticsSection = () => {
