@@ -1,26 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@300;400;600;700&display=swap');
 @import "tailwindcss";
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --choc: #9f6a4b;
+  --beige: #F5F1E8;
+  --darker: #634133;
+  --lighter: #f5f5f5;
+  --light: #e9e1d4;
+  --dark: #01111f;
+  --h1: clamp(2.5rem, 6vw, 5rem);
+  --h2: clamp(2rem, 5vw, 4rem);
+  --h3: clamp(1.5rem, 4vw, 3rem);
+  --h4: clamp(1.25rem, 3vw, 2.5rem);
+  --h5: clamp(1rem, 3vw, 2rem);
+  --body: clamp(15px, 3vw, 1rem);
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Helvetica, sans-serif;
+}
+
+.trans {
+  background-color: rgba(233, 225, 212, 0.6);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.count {
+  font-weight: 700 !important;
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  flex: 0 0 auto;
+  width: 100%; 
+  min-height: 200px; 
+}
+
+@media (min-width: 1024px) {
+  .embla__slide {
+    width: 50%;
+  }
+
+  .learn {
+    background-image: url('../public/images/mission.webp');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 15%;
+  }
+}
+
+.mem {
+  background: url('../public/images/prof.svg'), rgba(152, 171, 187, 0.3);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react-international-phone-input-container {
+  display: flex;
+  position: relative;
+  height: 41px !important;
+  border-radius: 0.25rem !important;
+}
+
+.react-international-phone-country-selector-button__button-content {
+  display: flex;
+  height: 41px !important;
+  border-radius: 0.25rem !important;
+}
+
+.react-international-phone-country-selector-button__button {
+  border-radius: 0 !important;
+}
+
+.react-international-phone-input,
+.react-international-phone-input-container .react-international-phone-input {
+  height: 41px !important;
+  width: 100%;
+  border-radius: 0 !important;
+}
+
+.react-international-phone-country-selector,
+.react-international-phone-country-selector-button {
+  height: 41px !important;
+  border-radius: 0 !important;
+}
+
+.react-international-phone-input:focus {
+  outline: 1px solid var(--light) !important;
 }

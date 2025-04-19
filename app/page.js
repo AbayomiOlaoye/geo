@@ -1,103 +1,62 @@
+"use client";
+import { useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import LearnWithUs from "@/components/LearnWithUs";
+import PopularCoursesCarousel from "@/components/PopularCourses";
+import Mission from "@/components/OnAMission";
+import StatisticsSection from "@/components/Stats";
+import TestimonialsSection from "@/components/Testimonials";
+import TeamVolunteersSection from "@/components/Team";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
+  return (
+    <>
+      <motion.article
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+        viewport={{ once: true }}
+        className="bg-white w-full min-h-screen overflow-hidden"
+      >
+        <div className="flex relative mx-auto mt-14 flex-col w-[100%] h-[80vh] justify-center items-center">
+          <motion.div
+            className="absolute inset-0 lg:w-[50%] lg:h-[20vh] left-0 z-10 flex flex-col items-center rounded-br-[50px] top-[45vh] lg:top-[44vh]"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0, transition: { duration: 0.8, delay: 1 } }}
+            viewport={{ once: true }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="self-start p-5 lg:px-10 bg-[var(--light)] w-full rounded-tr-4xl trans">
+              <h1 className="font-extrabold text-3xl md:text-5xl text-[#4F2F18] md:leading-12">Hope and Redemption</h1>
+              <p className="text-white text-[20px] py-5">Discover a Living Relationship with God</p>
+            </div>
+            <div className="relative bg-[var(--choc)] w-full flex items-center justify-center rounded-br-[50px] p-5">
+              <Link href="/about-us" className="bg-transparent border-white border font-bold text-center hover:text-[var(--choc)] text-white hover:bg-[var(--light)] p-4 w-[60%] rounded-tr-lg rounded-bl-lg transition duration-300 active:scale-95">
+                Learn More
+              </Link>
+            </div>
+          </motion.div>
+          <Image src="/images/hero-bg.svg" className="w-full h-full object-cover rounded-br-[100px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <article className="flex flex-col mt-[3vh] gap-3 w-full max-w-[1500px] mx-auto p-5 lg:px-[5%]">
+          <p className="text-[4vw] md:text-[20px] lg:max-w-[50%] leading-10">
+            At GEO, we share the transformative message of salvation through Jesus Christ, empowering individuals just like you.          </p>
+          <Link href="/making-great-impact" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit mt-2 transition duration-300 active:scale-95">
+            Explore Our Mission
+          </Link>
+        </article>
+        <LearnWithUs />
+        <TeamVolunteersSection />
+        <PopularCoursesCarousel />
+        <Mission />
+        <StatisticsSection />
+        <TestimonialsSection />
+      </motion.article>
+    </>
   );
 }
