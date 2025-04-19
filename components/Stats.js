@@ -9,13 +9,13 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 const courses = [
   {
     title: 'No More Sorrow',
-    image: '/images/risk-mgt.webp',
+    image: '/flyer/no-more-sorrow.webp',
     date: 'May 28 - 30, 2025',
-    upcoming: false,
+    upcoming: true,
   },
   {
     title: 'A 3-Day Liberation Crusade',
-    image: '/images/management.webp',
+    image: '/flyer/liberation.webp',
     date: ' Mar. 18 - 20, 2025',
     upcoming: false,
   },
