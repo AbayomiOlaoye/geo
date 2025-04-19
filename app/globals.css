@@ -69,12 +69,6 @@ h6 {
   }
 }
 
-.mem {
-  background: url('../public/images/prof.svg'), rgba(152, 171, 187, 0.3);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .react-international-phone-input-container {
   display: flex;
   position: relative;

@@ -100,7 +100,7 @@ const sendAChat = () => {
             <h1 className="font-bold text-2xl lg:text-4xl md:leading-12 text-[var(--light)] md:max-w-[490px] max-w-[80%]">Contact Us</h1>
           </div>
         </div>
-        <Image src="/bg/contact.jpg" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
+        <Image src="/bg/contact-bg.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
       </div>
       <AnimatePresence>
         {showResponse && (
@@ -131,9 +131,9 @@ const sendAChat = () => {
           </motion.div>
         )}
       </AnimatePresence>
-        <div className="inset-0 flex items-center z-[600000] justify-center bg-mv-deep bg-opacity-85">
+        <div className="inset-0 flex items-center w-full z-[600000] justify-center">
           <motion.div
-            className="bg-white overflow-y-auto"
+            className="bg-white overflow-y-auto max-w-[1500px] mx-auto"
             initial={{ opacity: 0, y: 50, x: 100 }}
             animate={{ opacity: 1, y: 0, x: 0 }}
             exit={{ opacity: 0, y: 50, x: 100 }}
