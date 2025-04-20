@@ -135,15 +135,15 @@ const CourseCard = ({ course }) => {
           className="rounded-tr-4xl"
         />
       </div>
-      <div className="p-5">
+      <div className="p-3">
         <motion.article
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, repeatDelay: 0.3 } }}
           className="flex gap-4 items-center justify-between text-center"
         >
-          {course.upcoming && <p className="text-white p-1 rounded-full px-3 bg-[var(--choc)] mb-4">Upcoming</p>}
-          {!course.upcoming && <p className="text-black p-1 rounded-full px-3 bg-[var(--light)] mb-4">Ended</p>}
-          <p className="text-[var(--darker)] p-1 rounded-full px-3 bg-white mb-4">{course.date}</p>
+          {course.upcoming && <p className="text-white p-1 text-sm rounded-full px-3 bg-[var(--choc)] mb-4">Upcoming</p>}
+          {!course.upcoming && <p className="text-black p-1 text-sm rounded-full px-3 bg-[var(--light)] mb-4">Ended</p>}
+          <p className="text-[var(--darker)] p-1 rounded-full text-[12px] md:text-sm px-3 bg-white mb-4">{course.date}</p>
         </motion.article>
         <h3 className="font-medium mb-4 h-16 text-white text-lg">{course.title}</h3>
         {course.upcoming && (

@@ -2,37 +2,55 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { v4 as uuidv4 } from 'uuid';
 import Autoplay from 'embla-carousel-autoplay';
 import EmblaCarousel from 'embla-carousel-react';
 
 const testimonials = [
   {
+    id: uuidv4(),
     image: "/images/testimony-one.webp",
-    name: "testimony-one",
+    name: "Testimony One",
   },
   {
+    id: uuidv4(),
     image: "/images/testimony-two.webp",
-    name: "testimony-two",
+    name: "Testimony Two",
   },
   {
+    id: uuidv4(),
     image: "/images/testimony-three.webp",
-    name: "testimony-three",
+    name: "Testimony Three",
   },
   {
+    id: uuidv4(),
     image: "/images/testimony-four.webp",
-    name: "testimony-four",
+    name: "Testimony Four",
   },
   {
+    id: uuidv4(),
     image: "/images/testimony-five.webp",
-    name: "testimony-five",
+    name: "Testimony Five",
   },
   {
+    id: uuidv4(),
     image: "/images/testimony-six.webp",
-    name: "testimony-six",
+    name: "Testimony Six",
   },
   {
-    image: "/images/testimony-seven.webp",
-    name: "testimony-seven",
+    id: uuidv4(),
+    image: "/testimonials/beneficiaries.webp",
+    name: "Beneficiary Seven",
+  },
+  {
+    id: uuidv4(),
+    image: "/testimonials/joint-scholarship.webp",
+    name: "Joint Scholarship",
+  },
+  {
+    id: uuidv4(),
+    image: "/testimonials/scholars.webp",
+    name: "Scholar Eight",
   }
 ];
 
@@ -103,8 +121,8 @@ const TestimonialsSection = () => {
             <div className="relative w-full mb-20">
               <div className="embla" ref={emblaRef}>
                 <div className="embla__container my-10">
-                  {testimonials.map((review, index) => (
-                    <div key={index + review.name} className="embla__slide px-4 md:max-w-[60%]">
+                  {testimonials.map((review) => (
+                    <div key={review.id} className="embla__slide px-4 md:max-w-[60%]">
                       <Image
                         src={review.image}
                         alt={review.name}
@@ -117,15 +135,15 @@ const TestimonialsSection = () => {
                 </div>
               </div>
 
-              <div className="absolute bottom-[-45px] pt-8 left-1/2 transform -translate-x-1/2 flex items-center space-x-2">
+              <div className="absolute bottom-[-45px] pt-8 left-1/2 transform -translate-x-1/2 flex items-center space-x-1">
                 {Array.from({ length: numberOfDots }).map((_, index) => (
                   <button
                     key={index}
                     onClick={() => emblaApi && emblaApi.scrollTo(index)}
                     className={`${
                       activeIndex === index
-                        ? "bg-[var(--choc)] w-4 h-2 rounded-full scale-125"
-                        : "bg-[var(--light)] w-3 h-3 rounded-full opacity-60"
+                        ? "bg-[var(--choc)] w-2.5 h-2.5 rounded-full scale-125"
+                        : "bg-[var(--light)] w-2 h-2 rounded-full opacity-60"
                     } transition-all transform`}
                     style={{
                       transition: 'transform 0.3s ease-in-out, background-color 0.3s ease',
