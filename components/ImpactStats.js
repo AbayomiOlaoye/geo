@@ -38,8 +38,8 @@ const ImpactStats = () => {
       viewport={{ once: true }}
       className="relative py-20 mt-9 overflow-hidden"
     >
-      <article className='container lg:max-w-[1500px] max-w-[100%] px-[5%] mx-auto'>
-        <div className="lg:flex grid grid-cols-2 justify-items-center md:grid-cols-4 gap-8">
+      <article className='container lg:max-w-[1500px] max-w-full px-[5%] mx-auto'>
+        <div className="lg:flex grid grid-cols-2 justify-items-center items-center gap-8 justify-around w-full">
           {stats.map((stat) => (
             <motion.div
               key={stat.id}
@@ -56,7 +56,7 @@ const ImpactStats = () => {
               <p className="text-sm text-[var(--darker)] max-w-[80%] mx-auto mt-2">{stat.label}</p>
             </motion.div>
           ))}
-          </div>
+        </div>
       </article>
     </motion.section>
   );
