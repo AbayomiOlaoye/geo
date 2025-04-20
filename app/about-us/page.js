@@ -34,7 +34,7 @@ export default function About() {
             At GEO, we share the transformative message of salvation through Jesus Christ, empowering
             individuals just like you. Our mission is to equip and inspire you to make a difference
             in your community and beyond. Join us on this journey of faith, hope, and love as we
-            work together to spread the message of God&apos;s grace and redemption.
+            work together to spread the message of God&apos;s grace and redemption, and engage in life-changing humanitarian services.
           </p>
           <Link href="/making-great-impact" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
             Explore Our Mission

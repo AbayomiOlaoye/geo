@@ -9,7 +9,7 @@ const teamData = [
     name: "Ehima Ebor",
     title: "President/Founder",
     imageUrl: ["/team/ehima.svg", "/team/ehima.webp"],
-    bio: "Ehima EBOR established Godsent Evangelical Outreach with a heart for evangelism and a vision for discipleship, to reach the lost, equip believers, and transform communities."
+    bio: "Ehima Ebor established Godsent Evangelical Outreach with a heart for evangelism and a vision for discipleship, to reach the lost, equip believers, and transform communities."
   },
   {
     id: uuidv4(), 

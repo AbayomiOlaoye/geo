@@ -28,7 +28,7 @@ const courses = [
     action: 'Join Us',
   },
   {
-    title: 'Charity Works',
+    title: 'Charity Works/Humanitarian Aid',
     image: '/images/charity.webp',
     text: "Extending God's love through practical help: scholarships, feeding programs, and essential provisions for those in need.",
     action: 'Donate',

@@ -29,7 +29,7 @@ const Mission = () => {
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
       viewport={{ once: true }}
-      className="bg-white w-full overflow-x-hidden py-12 mt-[50px] lg:mt-14 mission"
+      className="bg-white w-full overflow-x-hidden py-12 lg:mt-14 mission"
     >
       <article className="container max-w-[1500px] px-[5%] mx-auto">
         <motion.article
@@ -47,7 +47,7 @@ const Mission = () => {
         <motion.article className="flex flex-col lg:flex-row gap-8 mt-10 mission-bg">
           <Image src="/images/mission-donate.webp" alt="Learn with us" className="hidden lg:block w-[40%] object-cover rounded-4xl" width={500} height={300} />
           <article className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-10">
-          <Image src="/images/mission-donate.webp" alt="Learn with us" className="block lg:hidden object-cover rounded-lg" width={500} height={300} />
+            <Image src="/images/mission-donate.webp" alt="Learn with us" className="block lg:hidden object-cover rounded-lg" width={500} height={300} />
             <motion.article
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
