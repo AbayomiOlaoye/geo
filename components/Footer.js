@@ -76,7 +76,7 @@ const Footer = () => {
                 <a href="https://www.instagram.com/godsent.evangelical.outreach?igsh=ZXd1M3VkdWhpaTJ5" target='_blank' title="Follow us on Instagram" className='w-6 cursor-pointer hover:scale-125 transition-transform'>
                   <AiFillInstagram className='w-8 h-8 text-[#fff]' />
                 </a>
-                <a href="mailto:godsentevangelicaloutreach@gmail.com" title="Send us an email" className='w-8 cursor-pointer hover:scale-125 transition-transform'>
+                <a href="mailto:godsentevangelicaloutreach@gmail.com" title="Send us a mail" className='w-8 cursor-pointer hover:scale-125 transition-transform'>
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 4H2v16h20V4zM2 4l10 8L22 4" />
                   </svg>

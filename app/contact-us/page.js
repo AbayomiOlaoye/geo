@@ -105,7 +105,7 @@ const sendAChat = () => {
       <AnimatePresence>
         {showResponse && (
           <motion.div
-            className="fixed inset-0 flex justify-center items-center bg-mv-deep bg-opacity-70 z-50"
+            className="fixed inset-0 flex justify-center items-center bg-opacity-70 z-50"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -139,7 +139,7 @@ const sendAChat = () => {
             exit={{ opacity: 0, y: 50, x: 100 }}
             transition={{ type: "spring", stiffness: 300, damping: 30 }}
           >
-            <div className="flex flex-col items-center lg:flex-row p-6 gap-6 max-md:gap-0 sm:gap-12 md:mx-8 overflow-y-auto scroll">
+            <div className="flex flex-col items-center justify-between lg:flex-row p-6 gap-6 overflow-y-auto scroll w-full">
               <div className="flex flex-col gap-4 space-y-4 p-8 w-full">
                 <div>
                   <h2 className="font-bold tex-lg mb-3 uppercase">
@@ -152,11 +152,11 @@ const sendAChat = () => {
                 <div>
                   <h1 className="font-extrabold text-lg mb-3">Office Address:</h1>
                   <div className='flex flex-col md:flex-row gap-4 items-start'>
-                    <article className='flex flex-col gap-2'>
+                    <address className='flex flex-col gap-2'>
                       <p className="text-md">No. 22 Ekiomado street,</p>
                       <p className="text-md">Off S&T Road, Uselu-Lagos Road,</p>
                       <p className="text-md">Benin City, Edo State.</p>
-                    </article>
+                    </address>
                   </div>
                 </div>
                 <div>
@@ -182,7 +182,7 @@ const sendAChat = () => {
                     <a href="https://www.instagram.com/godsent.evangelical.outreach?igsh=ZXd1M3VkdWhpaTJ5" target='_blank' title="Follow us on Instagram" className='w-6 cursor-pointer hover:scale-125 transition-transform'>
                       <AiFillInstagram className='w-8 h-8' />
                     </a>
-                    <a href="mailto:godsentevangelicaloutreach@gmail.com" title="Send us an email" className='w-8 cursor-pointer hover:scale-125 transition-transform'>
+                    <a href="mailto:godsentevangelicaloutreach@gmail.com" title="Send us a mail" className='w-8 cursor-pointer hover:scale-125 transition-transform'>
                       <svg xmlns="http://www.w3.org/2000/svg" className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M22 4H2v16h20V4zM2 4l10 8L22 4" />
                       </svg>
@@ -191,8 +191,8 @@ const sendAChat = () => {
                 </div>
               </div>
 
-              <div className="bg-[#F1F4F9] p-6 rounded-lg w-full h-fit shadow-lg overflow-y-auto">
-                <form onSubmit={handleFormSubmit} className="space-y-4">
+              <div className="bg-[var(--light)] p-6 rounded-lg w-full h-fit shadow-lg overflow-y-auto">
+                <form onSubmit={handleFormSubmit} className="space-y-4 w-full">
                   <label
                     htmlFor="name"
                     className="block text-sm font-medium text-[var(--choc)]"
@@ -204,7 +204,7 @@ const sendAChat = () => {
                       placeholder="Full Name"
                       value={name}
                       onChange={(e) => setName(capitalizeName(e.target.value))}
-                      className="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#263FA3] transition-all"
+                      className="w-full mt-2 px-4 py-3 border border-[var(--choc)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--choc)] transition-all"
                     />
                     {errors.name && (
                       <p className="text-red-500 text-xs mt-1">{errors.name}</p>
@@ -221,7 +221,7 @@ const sendAChat = () => {
                       placeholder="Email Address"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
-                      className="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#263FA3] transition-all"
+                      className="w-full mt-2 px-4 py-3 border border-[var(--choc)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--choc)] transition-all"
                     />
                     {errors.email && (
                       <p className="text-red-500 text-xs mt-1">{errors.email}</p>
@@ -236,7 +236,7 @@ const sendAChat = () => {
                       name="purpose"
                       value={purpose}
                       onChange={(e) => setPurpose(e.target.value)}
-                      className="w-full mt-2 px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#263FA3] transition-all"
+                      className="w-full mt-2 px-4 py-3 border border-[var(--choc)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--choc)] transition-all"
                     >
                       <option value="" disabled>Select Purpose</option>
                       <option value="General Inquiry">General Inquiry</option>
@@ -263,7 +263,7 @@ const sendAChat = () => {
                       placeholder="Type your message here..."
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
-                      className="w-full mt-2 px-4 pb-12 pt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-1 focus:ring-[#263FA3] transition-all"
+                      className="w-full mt-2 px-4 pb-12 pt-2 border border-[var(--choc)] rounded-lg focus:outline-none focus:ring-1 focus:ring-[var(--choc)] transition-all"
                     />
                     {errors.message && (
                       <p className="text-red-500 text-xs mt-1">{errors.message}</p>
@@ -273,7 +273,7 @@ const sendAChat = () => {
                     <button
                       type="submit"
                       disabled={state.submitting}
-                      className="w-fit mx-auto py-3 px-8 bg-[var(--choc)] mt-2 hover:bg-blue-500 text-white font-bold cursor-pointer rounded focus:outline-none focus:shadow-outline transition-colors transform active:scale-95 disabled:bg-[#8B99D0] disabled:cursor-not-allowed"
+                      className="w-fit mx-auto py-3 px-8 bg-[var(--choc)] mt-2 hover:bg-[var(--choc)] text-white font-bold cursor-pointer rounded focus:outline-none focus:shadow-outline transition-colors transform active:scale-95 disabled:bg-[var(--darker)] disabled:cursor-not-allowed"
                     >
                       {state.submitting ? "Submitting..." : "Submit"}
                     </button>

@@ -6,15 +6,9 @@ import Image from "next/image";
 import Mission from "@/components/OnAMission";
 import StatisticsSection from "@/components/Stats";
 import TestimonialsSection from "@/components/Testimonials";
-import Faqs from "@/components/Faqs";
 import TeamVolunteersSection from "@/components/Team";
 
-// Content for the About Us page for the organization: It is an organization that shares the message of salvation through Jesus Christ and empowers individuals to make a difference in their communities.
-
-
- 
 export default function About() {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
