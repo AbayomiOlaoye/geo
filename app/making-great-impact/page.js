@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Mission from "@/components/OnAMission";
-import StatisticsSection from "@/components/Stats";
 import TestimonialsSection from "@/components/Testimonials";
 import Impact from "@/components/Impact";
 import ImpactStats from "@/components/ImpactStats";
+import PopularCoursesCarousel from "@/components/PopularCourses";
 
 export default function OurImpact() {
 
@@ -151,7 +151,7 @@ export default function OurImpact() {
           </article>
         </motion.section>
         <Mission />
-        <StatisticsSection />
+        <PopularCoursesCarousel />
         <TestimonialsSection />
       </motion.article>
     </>
