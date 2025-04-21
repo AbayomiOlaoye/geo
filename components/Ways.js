@@ -164,7 +164,66 @@ const Ways = () => {
             </Link>
           </motion.article>
         </article>
-
+        <motion.article
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
+            viewport={{ once: true }}
+            className="flex flex-col gap-4 py-10"
+          >
+            <h1 className="font-bold text-2xl lg:text-4xl">Other Ways to Get Involved</h1>
+            <p className="text-left text-[var(--choc)] max-w-[80%]">
+              Also, you can partner with us through:
+            </p>
+            <motion.ul className='flex flex-col gap-5 mt-6 w-full'>
+              <motion.li
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className='list-disc fle gap-3 leading-8 ml-5'
+              >
+                <span className="font-bold">Pray Faithfully: </span>
+                Prayer is the foundation of our ministry. Commit to regularly praying for our outreach efforts, volunteers, leaders, and for hearts to be open to the Gospel in our community.
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className='list-disc leading-8 ml-5'
+              >
+                <span className="font-bold">Volunteer Your Time: </span>
+                Put your faith into action! We need passionate volunteers for various roles, including:
+                <menu className='flex flex-col gap-3 mt-5'>
+                  <li className='list-disc ml-5'>Joining outreach teams (training provided)</li>
+                  <li className='list-disc ml-5'>Helping at events (setup, greeting, follow-up)</li>
+                  <li className='list-disc ml-5'>Leading or hosting a small group</li>
+                  <li className='list-disc ml-5'>Serving in community projects</li>
+                  <li className='list-disc ml-5'>Providing administrative or technical support</li>
+                </menu>
+              </motion.li>
+              <motion.li
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className='list-disc leading-8 ml-5'
+              >
+                <span className="font-bold">Share the Message: </span>
+                Be an ambassador for the Gospel and for GEO!
+                <menu className='flex flex-col gap-3 mt-5'>
+                  <li className='list-disc ml-5'>Share your personal testimony of faith</li>
+                  <li className='list-disc ml-5'>Invite friends, family, or colleagues to our events or small groups</li>
+                  <li className='list-disc ml-5'>Share our content on your social media platforms</li>
+                </menu>
+              </motion.li>
+            </motion.ul>
+          </motion.article>
+        <h2 className="text-[var(--choc)] text-center font-bold text-2xl lg:text-4xl mt-4 mx-auto">Thank You for Your Partnership!</h2>
+        <p className="text-center lg:max-w-[80%] my-6 mx-auto leading-8">
+          Thank you for prayerfully considering how you can partner with GEO. Your involvement,
+          whether through prayer, volunteering, or financial giving, is an investment with
+          eternal rewards. Together, we can continue sharing the hope of salvation found only
+          in Jesus Christ and see lives transformed in our community and beyond!
+          We are incredibly grateful for your support.
+        </p>
       </article>
     </motion.section>
   )
