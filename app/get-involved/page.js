@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import TestimonialsSection from "@/components/Testimonials";
 import ImpactStats from "@/components/ImpactStats";
-import PopularCoursesCarousel from "@/components/PopularCourses";
 import Ways from "@/components/Ways";
+import StatisticsSection from "@/components/Stats";
 
 const impact = [
   "Fund outreach events like rallies and concerts, providing platforms to share the Good News with those who haven't heard.",
@@ -68,9 +68,9 @@ export default function GetInvolved() {
                   Call to Give
                 </h2>
                 <p className="leading-8 text-center">
-                  Partnering with ₦50,000 contributes towards hosting an impactful community outreach event.
+                  Partnering with us financially contributes towards hosting an impactful community outreach event.
                 </p>
-                <Link href="/donate" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
+                <Link href="https://www.paystack.com/pay/give-to-geo" target="_blank" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
                   Donate Now
                 </Link>
                 <Image src="/impact/get-involved.png" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] mt-5" alt="Welcome" width={500} height={300} />
@@ -82,7 +82,7 @@ export default function GetInvolved() {
           </div>
         </section>
         <Ways />
-        <PopularCoursesCarousel />
+        <StatisticsSection />
         <ImpactStats />
         <TestimonialsSection />
       </motion.article>

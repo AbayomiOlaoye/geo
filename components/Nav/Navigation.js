@@ -57,9 +57,9 @@ return (
       <div className="mx-auto w-full max-w-[1500px] py-3 px-3 lg:px-[5%] sm:px-6">
         <div className="flex flex-col items-center justify-between lg:flex-row">
           <div className="flex flex-1 items-center lg:mr-3 lg:flex-none">
-            <p className="ml-3 text-center font-medium">
+            <p className="ml-3 text-center text-[3vw] md:text-[15px] font-medium text-black">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2"
-                stroke="currentColor" aria-hidden="true"   className="mr-2 text-choc hidden h-6 w-6 lg:inline">
+                stroke="currentColor" aria-hidden="true"   className="mr-2 text-[var(--choc)] h-6 w-6 inline">
                 <path strokeLinecap="round" strokeLinejoin="round"
                   d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z">
                 </path>
@@ -69,7 +69,8 @@ return (
           </div>
           <div className="mt-2 w-full flex-shrink-0 lg:mt-0 lg:w-auto">
             <Link
-              href="/get-involved"
+              href="https://www.paystack.com/pay/give-to-geo"
+              target="_blank"
               className="flex items-center justify-center rounded-md border border-transparent bg-[var(--choc)] px-4 py-2 text-sm font-medium text-white shadow-sm hover:opacity-70 active:scale-95 focus:outline-none focus:ring-2 focus:ring-[var(--dark)] focus:ring-offset-2 transition-all duration-200 ease-in-out"
             >
               Donate Now
@@ -135,7 +136,7 @@ return (
           </motion.article>
         </AnimatePresence>
 
-        <Link href="/get-involved" className="hidden lg:flex items-center rounded-tr-lg rounded-bl-lg justify-center border border-transparent bg-white px-6 py-4 text-sm font-bold text-[var(--choc)] shadow-sm hover:bg-[var(--light)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-text-choc-950 focus:ring-offset-2 transition-all duration-200 ease-in-out">
+        <Link href="https://www.paystack.com/pay/give-to-geo" target="_blank" className="hidden lg:flex items-center rounded-tr-lg rounded-bl-lg justify-center border border-transparent bg-white px-6 py-4 text-sm font-bold text-[var(--choc)] shadow-sm hover:bg-[var(--light)] active:scale-95 focus:outline-none focus:ring-2 focus:ring-text-choc-950 focus:ring-offset-2 transition-all duration-200 ease-in-out">
           Support GEO
         </Link>
       </article>

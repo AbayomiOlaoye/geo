@@ -30,7 +30,7 @@ export default function OurImpact() {
               <h1 className="font-bold text-2xl lg:text-4xl md:leading-12 text-[var(--light)] md:max-w-[490px] max-w-[80%]">Our Impact</h1>
             </div>
           </div>
-          <Image src="/bg/admission-bg.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
+          <Image src="/events/liberation/liberation-testimonial.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
         </div>
 
         <motion.section
@@ -144,7 +144,7 @@ export default function OurImpact() {
                   Your involvement, no matter the form, makes an eternal difference.
                 </p>
               </div>
-              <Link href="/get-involved" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
+              <Link href="https://www.paystack.com/pay/give-to-geo" target="_blank" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
                 Support Us
               </Link>
             </motion.article>

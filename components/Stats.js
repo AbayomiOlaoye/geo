@@ -11,12 +11,14 @@ const courses = [
     title: 'No More Sorrow',
     image: '/flyer/no-more-sorrow.webp',
     date: 'May 28 - 30, 2025',
+    slug: "no-more-sorrow-may28",
     upcoming: true,
   },
   {
     title: 'A 3-Day Liberation Crusade',
     image: '/flyer/liberation.webp',
     date: ' Mar. 18 - 20, 2025',
+    slug: "a-3-day-liberation-crusademar18",
     upcoming: false,
   },
 ];
@@ -68,7 +70,7 @@ const StatisticsSection = () => {
         </div>
 
         <div className="container mx-auto relative z-10">
-          <h2 className="text-4xl font-bold text-center mb-4 text-[var(--light)]">Upcoming & recent Programmes</h2>
+          <h2 className="text-2xl lg:text-4xl font-bold text-center mb-4 text-[var(--light)]">Upcoming & recent Programmes</h2>
           <p className="text-white text-center md:max-w-[600px] mx-auto mt-4 mb-12">
             Discover how we are actively sharing the Gospel and serving our communities through various outreach initiatives.
           </p>
@@ -147,12 +149,12 @@ const CourseCard = ({ course }) => {
         </motion.article>
         <h3 className="font-medium mb-4 h-16 text-white text-lg">{course.title}</h3>
         {course.upcoming && (
-          <Link href="/get-involved" className="block w-full border font-bold text-center pl-12 border-[var(--light)] text-[var(--choc)] p-4 rounded-bl-3xl bg-[var(--light)] hover:bg-transparent hover:text-white transition duration-200">
+          <Link href="https://www.paystack.com/pay/give-to-geo" target='_blank' className="block w-full border font-bold text-center pl-12 border-[var(--light)] text-[var(--choc)] p-4 rounded-bl-3xl bg-[var(--light)] hover:bg-transparent hover:text-white transition duration-200">
             Partner with Us
           </Link>)
         }
         {!course.upcoming && (
-          <Link href={`/event/${course.title}`} className="block w-full border font-bold text-center pl-12 border-[var(--light)] text-[var(--choc)] p-4 rounded-bl-3xl bg-[var(--light)] hover:bg-transparent hover:text-white transition duration-200">
+          <Link href={`/events/${course.slug}`} className="block w-full border font-bold text-center pl-12 border-[var(--light)] text-[var(--choc)] p-4 rounded-bl-3xl bg-[var(--light)] hover:bg-transparent hover:text-white transition duration-200">
             View Details
           </Link>)
         }

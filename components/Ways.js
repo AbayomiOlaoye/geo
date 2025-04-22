@@ -52,17 +52,17 @@ const Ways = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             viewport={{ once: true }}
-            className="bg-white max-w-[80%] md:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
+            className="bg-white w-full md:max-w-[80%] lg:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
           >
             <h2 className="w-16 h-16 bg-[var(--light)] text-[var(--choc)] rounded-tr-[20px] rounded-bl-[20px] flex items-center justify-center font-bold text-2xl">
               01
             </h2>
             <h2 className="text-[var(--choc)] font-bold text-lg">Online Giving</h2>
-            <p className="">
+            <p className="md:max-w-[80%]">
               Give securely online today via credit card, debit card, or bank transfer.
               It&apos;s quick, easy, and allows your gift to be put to work immediately.
             </p>
-            <Link href="/get-involved" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
+            <Link href="https://www.paystack.com/pay/give-to-geo" target="_blank" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
               Donate Now
             </Link>
           </motion.article>
@@ -71,13 +71,13 @@ const Ways = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             viewport={{ once: true }}
-            className="bg-white max-w-[80%] md:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
+            className="bg-white w-full md:max-w-[80%] lg:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
           >
             <h2 className="w-16 h-16 bg-[var(--light)] text-[var(--choc)] rounded-tr-[20px] rounded-bl-[20px] flex items-center justify-center font-bold text-2xl">
               02
             </h2>
             <h2 className="text-[var(--choc)] font-bold text-lg">Offline Bank Transfer</h2>
-            <p className="">
+            <p className="md:max-w-[80%]">
               Prefer to make a transfer directly? Please click on the button below to see the account details.
             </p>
             <button
@@ -93,29 +93,28 @@ const Ways = () => {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.5 }}
-                  className="bg-[var(--light)] p-4 rounded-lg shadow-md mt-4 flex flex-col gap-4"
+                  className="bg-[var(--light)] p-3 py-5 rounded-lg shadow-md mt-4 flex flex-col gap-4"
                 >
-                  <h4 className="text-xl">Payment Instruction</h4>
-                  <p className="max-w-[80%] mx-auto">Kindly make a transfer or bank deposit to the account details below:</p>
-                  <article className="flex flex-col gap-4 relative">
-                    <h5 className="">Bank Details</h5>
-                    <p className="flex items-center gap-2 font-bold">
+                  <h4 className="text-lg text-center">Payment Instruction</h4>
+                  <p className="max-w-[80%] mx-auto text-center">Kindly make a transfer or bank deposit to the account details below:</p>
+                  <article className="flex flex-col items-center gap-4 relative">
+                    <p className="flex items-center flex-col md:flex-row gap-2 font-bold">
                       Account Number:
                       <span className="font-bold font-mono text-3xl text-[var(--darker)]"> 2043743113</span>
                     </p>
-                    <div className={`absolute top-12 right-28 flex items-center gap-2 ${isCopied ? 'bg-[var(--choc)] rounded-lg p-1 px-3 text-[var(--light)]' : 'text-gray-500'}`}>
+                    <div className={`absolute top-10 md:top-2 md:right-18 right-6 lg:right-14 flex items-center gap-2 ${isCopied ? 'bg-[var(--choc)] rounded-lg p-1 px-3 text-[var(--light)]' : 'text-gray-500'}`}>
                       <CopyToClipboard text="2043743113" onCopy={handleCopy} title="Click to copy" className="">
                         {!isCopied ? <MdContentCopy className="" /> : <GiCheckMark className="" />}
                       </CopyToClipboard>
                       {isCopied && <span>Copied!</span>}
                     </div>
-                    <p className="flex items-center font-bold gap-2">
+                    <p className="flex items-center flex-col md:flex-row font-bold gap-2">
                       Bank Name:
-                      <span> First Bank of Nigeria </span>
+                      <span className="font-bold text-lg text-[var(--darker)]"> First Bank of Nigeria </span>
                     </p>
-                    <p className="flex items-center font-bold gap-2">
+                    <p className="flex flex-col md:flex-row items-center font-bold gap-2">
                       Account Name:
-                      <span> Godsent Evangelical Outreach </span>
+                      <span className="font-bold text-lg text-[var(--darker)]"> Godsent Evangelical Outreach </span>
                     </p>
                   </article>
                 </motion.div>
@@ -127,13 +126,13 @@ const Ways = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             viewport={{ once: true }}
-            className="bg-white max-w-[80%] md:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
+            className="bg-white w-full md:max-w-[80%] lg:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
           >
             <h2 className="w-16 h-16 bg-[var(--light)] text-[var(--choc)] rounded-tr-[20px] rounded-bl-[20px] flex items-center justify-center font-bold text-2xl">
               03
             </h2>
             <h2 className="text-[var(--choc)] font-bold text-lg">Non-Cash Gifts</h2>
-            <p className="">
+            <p className="md:max-w-[80%]">
               We also accept gifts of assets, brand new clothing, and non-perishable food items.
               Reach out to our Support Team using any of the buttons below, for more information.
             </p>
@@ -152,13 +151,13 @@ const Ways = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8 } }}
             viewport={{ once: true }}
-            className="bg-white max-w-[80%] md:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
+            className="bg-white w-full md:max-w-[80%] lg:max-w-full mx-auto shadow-lg rounded-lg p-4 lg:px-6 py-10 flex flex-col gap-4 items-center text-center lg:items-start lg:text-justify"
           >
             <h2 className="w-16 h-16 bg-[var(--light)] text-[var(--choc)] rounded-tr-[20px] rounded-bl-[20px] flex items-center justify-center font-bold text-2xl">
               04
             </h2>
             <h2 className="text-[var(--choc)] font-bold text-lg">Legacy Giving</h2>
-            <p className="">Consider leaving a legacy through estate planning. Contact our support team for more information.</p>
+            <p className="md:max-w-[80%]">Consider leaving a legacy through estate planning. Contact our support team for more information.</p>
             <Link href="/contact-us" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit transition duration-300 active:scale-95">
               Contact Support Team
             </Link>
