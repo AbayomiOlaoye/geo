@@ -30,8 +30,9 @@ export default function About() {
           <Image src="/images/community-revival.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
         </div>
         <article className="flex-col mt-[5vh] max-w-[1500px] items-center mx-auto p-5 lg:px-[5%] flex gap-3">
-          <p className="md:text-[20px] max-w-[80%] mx-auto text-center leading-10">
-            At GEO, we share the transformative message of salvation through Jesus Christ, empowering
+          <p className="md:text-[20px] md:max-w-[80%] mx-auto text-center leading-8">
+            The Godsent Evangelical Outreach (GEO) was founded in the year 2021. At GEO,
+            we share the transformative message of salvation through Jesus Christ, empowering
             individuals just like you. Our mission is to equip and inspire you to make a difference
             in your community and beyond. Join us on this journey of faith, hope, and love as we
             work together to spread the message of God&apos;s grace and redemption, and engage in life-changing humanitarian services.

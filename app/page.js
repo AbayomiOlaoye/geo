@@ -44,7 +44,7 @@ export default function Home() {
           <Image src="/images/hero-bg.svg" className="w-full h-full object-cover rounded-br-[100px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
         </div>
         <article className="flex flex-col mt-[3vh] gap-3 w-full max-w-[1500px] mx-auto p-5 lg:px-[5%]">
-          <p className="text-[4vw] md:text-[20px] lg:max-w-[50%] leading-10">
+          <p className="text-[4vw] md:text-[20px] lg:max-w-[50%] leading-8">
             At GEO, we share the transformative message of salvation through Jesus Christ, empowering individuals just like you.          </p>
           <Link href="/making-great-impact" className="bg-[var(--choc)] my-5 hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-fit mt-2 transition duration-300 active:scale-95">
             Explore Our Mission

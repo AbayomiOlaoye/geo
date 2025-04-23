@@ -104,7 +104,7 @@ const TestimonialsSection = () => {
           <h2 className="text-3xl lg:text-4xl text-[var(--choc)] font-bold mt-5 text-center max-w-[80%]">Testimonials</h2>
           
           <article className="flex flex-col items-center text-[var(--choc)] justify-center">
-            <p className="mt-5 text-center text-black max-w-[80%] lg:max-w-[60%] lg:leading-8">
+            <p className="mt-5 text-center text-black md:max-w-[80%] lg:max-w-[60%] lg:leading-8">
               We are grateful to God for the lives He has touched through our ministry. Here are some of the testimonies from our members and participants.
             </p>
           </article>

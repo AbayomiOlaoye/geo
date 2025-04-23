@@ -61,7 +61,7 @@ const StatisticsSection = () => {
       <article className='container max-w-[1500px] px-[5%] mx-auto'>
         <div className="absolute inset-0 h-full w-full">
           <Image
-            src="/bg/recent.webp"
+            src="/flyer/recent.webp"
             alt="Graduation Background"
             layout="fill"
             objectFit="cover"

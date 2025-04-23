@@ -86,7 +86,14 @@ const teamData = [
     name: "Pst. S.O Olusegun",
     title: "Evangelism Coordinator",
     imageUrl: ["/team/pst-segun.svg", "/team/pst-segun.webp"],
-    bio: "Detailed bio about Jack Scott. Managing the finances with care."
+    bio: "Olusegun is passionate about evangelism and is dedicated to mobilizing believers to share the Gospel and make a difference in their communities."
+  },
+  {
+    id: uuidv4(),
+    name: "Pst. Godwin Akhere",
+    title: "HOD Utility/Logistics",
+    imageUrl: ["/team/godwin.svg", "/team/godwin.webp"],
+    bio: "Akhere has a passion for serving behind the scenes and a gift for organization, ensuring that the outreach's programs and events run smoothly and efficiently."
   },
 ];
 
