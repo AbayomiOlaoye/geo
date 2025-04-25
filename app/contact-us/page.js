@@ -100,7 +100,7 @@ const sendAChat = () => {
             <h1 className="font-bold text-2xl lg:text-4xl md:leading-12 text-[var(--light)] md:max-w-[490px] max-w-[80%]">Contact Us</h1>
           </div>
         </div>
-        <Image src="/bg/contact-bg.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
+        <Image src="/images/testimony-three.webp" className="w-full h-full object-cover rounded-br-[50px] lg:rounded-br-[100px] absolute" alt="Welcome" width={500} height={300} />
       </div>
       <AnimatePresence>
         {showResponse && (
