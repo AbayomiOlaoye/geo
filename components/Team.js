@@ -90,6 +90,13 @@ const teamData = [
   },
   {
     id: uuidv4(),
+    name: "Olusegun Olalere",
+    title: "Member",
+    imageUrl: ["/team/olusegun.svg", "/team/olusegun.webp"],
+    bio: "Olusegun Olalere is committed to serving the Body of Christ and a gift for compassion, and is dedicated to advancing the cause of Christ."
+  },
+  {
+    id: uuidv4(),
     name: "Pst. Godwin Akhere",
     title: "HOD Utility/Logistics",
     imageUrl: ["/team/godwin.svg", "/team/godwin.webp"],
