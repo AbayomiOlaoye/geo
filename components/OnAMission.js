@@ -58,7 +58,7 @@ const Mission = () => {
                 Your support empowers us to share the life-changing message of Jesus
                 Christ and serve our communities.
               </p>
-              <Link href="/get-invloved" className="bg-[var(--choc)] hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-full mt-2 transition duration-300 active:scale-95">
+              <Link href="/get-involved" className="bg-[var(--choc)] hover:bg-transparent hover:border hover:border-[var(--choc)] hover:text-[var(--choc)] text-white font-bold px-4 py-3 rounded-tr-lg rounded-bl-lg w-full mt-2 transition duration-300 active:scale-95">
                 Support Us
               </Link>
             </motion.article>

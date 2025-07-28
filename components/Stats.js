@@ -8,11 +8,18 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const courses = [
   {
+    title: 'Altar Against Altars',
+    image: '/flyer/altar.jpeg',
+    date: 'August 6 - 8, 2025',
+    slug: "altar-against-altars-2025",
+    upcoming: true,
+  },
+  {
     title: 'No More Sorrow',
     image: '/flyer/no-more-sorrow.webp',
     date: 'May 28 - 30, 2025',
     slug: "no-more-sorrow-may28",
-    upcoming: true,
+    upcoming: false,
   },
   {
     title: 'A 3-Day Liberation Crusade',
