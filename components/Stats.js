@@ -6,13 +6,13 @@ import 'keen-slider/keen-slider.min.css';
 import { useKeenSlider } from 'keen-slider/react';
 import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
-const courses = [
+const events = [
   {
     title: 'Altar Against Altars',
     image: '/flyer/altar.jpeg',
     date: 'August 6 - 8, 2025',
     slug: "altar-against-altars-2025",
-    upcoming: true,
+    upcoming: false,
   },
   {
     title: 'No More Sorrow',
@@ -84,7 +84,7 @@ const StatisticsSection = () => {
 
           <div className="relative">
             <div className="keen-slider mx-4" ref={sliderRef}>
-              {courses.map((course, index) => (
+              {events.map((course, index) => (
                 <div key={index} className="keen-slider__slide">
                   <CourseCard course={course} />
                 </div>
@@ -100,7 +100,7 @@ const StatisticsSection = () => {
 
                 <ArrowRight
                   onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-                  disabled={currentSlide === (courses.length - instanceRef.current.options.breakpoints["(min-width: 1280px)"].slides.perView)}
+                  disabled={currentSlide === (events.length - instanceRef.current.options.breakpoints["(min-width: 1280px)"].slides.perView)}
                 />
 
               </>
