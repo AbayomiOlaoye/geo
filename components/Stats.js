@@ -8,6 +8,13 @@ import { HiChevronLeft, HiChevronRight } from 'react-icons/hi';
 
 const events = [
   {
+    title: 'Victory Over Evil Agendas',
+    image: '/flyer/victory-over-evil.jpeg',
+    date: 'October 22 - 23, 2025',
+    slug: "victory-over-evil-agendas-2025",
+    upcoming: false,
+  },
+  {
     title: 'Altar Against Altars',
     image: '/flyer/altar.jpeg',
     date: 'August 6 - 8, 2025',
